@@ -159,111 +159,291 @@ export default function FourierGuide() {
 
   const sections = {
     fundamentals: {
-      title: "Conceptos Fundamentales",
-      items: [
-        {
-          title: "Transformada de Fourier",
-          description: "Técnica matemática que convierte señales del dominio del tiempo al dominio de la frecuencia",
-          subtext: "Fundamental para el análisis y procesamiento de señales",
-          features: [
-            "Descomposición de señales complejas",
-            "Identificación de patrones frecuenciales",
-            "Base del procesamiento digital moderno"
-          ]
-        },
-        {
-          title: "Convolución",
-          description: "Operación matemática que combina dos señales para producir una tercera señal modificada",
-          subtext: "Esencial en filtrado y procesamiento de señales",
-          features: [
-            "Filtrado de señales digitales",
-            "Procesamiento de imágenes",
-            "Análisis de sistemas lineales"
-          ]
-        },
-        {
-          title: "Procesamiento Frecuencial",
-          description: "Manipulación de la representación en frecuencia de una señal",
-          subtext: "Mejora características y extrae información específica",
-          features: [
-            "Análisis espectral",
-            "Filtrado frecuencial",
-            "Compresión de señales"
-          ]
-        }
-      ]
-    },
-    medical: {
-      title: "Aplicaciones Médicas",
-      items: [
-        {
-          title: "Mejora de Imágenes Médicas",
-          description: "Técnicas avanzadas para el procesamiento de imágenes diagnósticas",
-          subtext: "Mejora la precisión en diagnósticos médicos",
-          features: [
-            "Reducción de ruido en imágenes médicas",
-            "Realce de contraste y detalles",
-            "Reconstrucción 3D de tejidos"
-          ]
-        },
-        {
-          title: "Análisis de Señales Biológicas",
-          description: "Monitoreo y análisis de señales vitales y neurológicas",
-          subtext: "Detección temprana de anomalías",
-          features: [
-            "Análisis de ECG y EEG",
-            "Monitoreo cardíaco en tiempo real",
-            "Detección de patrones anormales"
-          ]
-        },
-        {
-          title: "Procesamiento Frecuencial en Ultrasonidos",
-          description: "Mejora de calidad y resolución en imágenes de ultrasonido",
-          subtext: "Visualizaciones más claras de tejidos internos",
-          features: [
-            "Mejora de resolución",
-            "Reducción de ruido",
-            "Realce de estructuras anatómicas"
-          ]
-        }
-      ]
-    },
-    tech: {
-      title: "Aplicaciones Tecnológicas",
-      items: [
-        {
-          title: "Compresión de Audio y Video",
-          description: "Optimización de archivos multimedia mediante análisis frecuencial",
-          subtext: "Reducción de tamaño manteniendo la calidad",
-          features: [
-            "Compresión de audio sin pérdidas significativas",
-            "Optimización de archivos multimedia",
-            "Análisis espectral para compresión"
-          ]
-        },
-        {
-          title: "Filtros Digitales en Procesamiento de Imágenes",
-          description: "Aplicación de convolución para mejorar imágenes",
-          subtext: "Mejora visual y corrección de defectos",
-          features: [
-            "Suavizado de imágenes",
-            "Eliminación de ruido",
-            "Realce de bordes"
-          ]
-        },
-        {
-          title: "Reconocimiento de Voz",
-          description: "Procesamiento de señales de voz para interfaces",
-          subtext: "Fundamental en asistentes virtuales",
-          features: [
-            "Conversión voz a datos",
-            "Análisis espectral",
-            "Filtrado de ruido"
-          ]
-        }
-      ]
-    }
-  };
+    title: "Conceptos Fundamentales",
+    items: [
+      {
+        title: "Transformada de Fourier",
+        description: "Técnica matemática que convierte señales del dominio del tiempo al dominio de la frecuencia",
+        subtext: "Fundamental para el análisis y procesamiento de señales",
+        longDescription: "La Transformada de Fourier es una herramienta matemática fundamental que permite descomponer señales complejas en sus componentes frecuenciales básicos. Esta técnica revolucionó el procesamiento de señales al permitir analizar y modificar señales en el dominio de la frecuencia.",
+        features: [
+          "Descomposición de señales complejas en componentes sinusoidales",
+          "Identificación de patrones frecuenciales en señales",
+          "Base matemática del procesamiento digital moderno",
+          "Análisis espectral de señales continuas y discretas",
+          "Optimización de sistemas de comunicación"
+        ],
+        applications: [
+          "Análisis espectral en sistemas de comunicación",
+          "Procesamiento de imágenes y audio digital",
+          "Sistemas de compresión de datos",
+          "Diseño de filtros digitales",
+          "Análisis de vibraciones mecánicas"
+        ],
+        technologies: [
+          "FFT (Fast Fourier Transform)",
+          "Analizadores de espectro",
+          "Sistemas de procesamiento digital",
+          "Software de análisis de señales"
+        ],
+        imagePath: "/path/to/fourier-transform-image.jpg"
+      },
+      {
+        title: "Convolución",
+        description: "Operación matemática que combina dos señales para producir una tercera señal modificada",
+        subtext: "Esencial en filtrado y procesamiento de señales",
+        longDescription: "La convolución es una operación matemática fundamental que describe cómo la forma de una señal es modificada al pasar a través de un sistema. Es la base del filtrado digital y tiene aplicaciones cruciales en el procesamiento de señales e imágenes.",
+        features: [
+          "Filtrado de señales digitales en tiempo real",
+          "Procesamiento avanzado de imágenes",
+          "Análisis de sistemas lineales invariantes en el tiempo",
+          "Implementación de efectos de audio",
+          "Modelado de respuestas de sistemas físicos"
+        ],
+        applications: [
+          "Diseño de filtros digitales",
+          "Procesamiento de audio profesional",
+          "Sistemas de visión artificial",
+          "Análisis de señales biomédicas",
+          "Procesamiento de imágenes satelitales"
+        ],
+        technologies: [
+          "DSP (Digital Signal Processors)",
+          "Sistemas de filtrado adaptativo",
+          "Software de procesamiento de audio",
+          "Sistemas embebidos de tiempo real"
+        ],
+        imagePath: "/path/to/convolution-image.jpg"
+      },
+      {
+        title: "Procesamiento Frecuencial",
+        description: "Manipulación de la representación en frecuencia de una señal",
+        subtext: "Mejora características y extrae información específica",
+        longDescription: "El procesamiento en el dominio de la frecuencia permite manipular señales de manera más eficiente para ciertas aplicaciones, facilitando la eliminación de ruido, la compresión de datos y el análisis espectral.",
+        features: [
+          "Análisis espectral avanzado",
+          "Filtrado frecuencial selectivo",
+          "Compresión eficiente de señales",
+          "Detección de componentes específicas",
+          "Mejora de la relación señal-ruido"
+        ],
+        applications: [
+          "Sistemas de comunicación digital",
+          "Análisis de vibraciones",
+          "Procesamiento de señales de radar",
+          "Sistemas de sonar",
+          "Análisis de señales sísmicas"
+        ],
+        technologies: [
+          "Analizadores de espectro en tiempo real",
+          "Sistemas de procesamiento paralelo",
+          "Hardware especializado de DSP",
+          "Software de análisis espectral"
+        ],
+        imagePath: "/path/to/frequency-processing-image.jpg"
+      }
+    ]
+  },
+  medical: {
+    title: "Aplicaciones Médicas",
+    items: [
+      {
+        title: "Mejora de Imágenes Médicas",
+        description: "Técnicas avanzadas para el procesamiento de imágenes diagnósticas",
+        subtext: "Mejora la precisión en diagnósticos médicos",
+        longDescription: "Las técnicas de procesamiento de señales aplicadas a imágenes médicas permiten mejorar significativamente la calidad y claridad de las imágenes diagnósticas, facilitando la detección temprana y el seguimiento de condiciones médicas.",
+        features: [
+          "Reducción avanzada de ruido en imágenes médicas",
+          "Realce adaptativo de contraste y detalles",
+          "Reconstrucción 3D de alta precisión de tejidos",
+          "Segmentación automática de estructuras anatómicas",
+          "Fusión de múltiples modalidades de imagen"
+        ],
+        applications: [
+          "Diagnóstico por imagen avanzado",
+          "Planificación quirúrgica 3D",
+          "Seguimiento de tratamientos oncológicos",
+          "Análisis de patologías cerebrales",
+          "Evaluación cardiovascular"
+        ],
+        technologies: [
+          "Sistemas de imagen médica digital",
+          "Software de reconstrucción 3D",
+          "Algoritmos de aprendizaje profundo",
+          "Sistemas PACS avanzados"
+        ],
+        imagePath: "/path/to/medical-imaging-image.jpg"
+      },
+      {
+        title: "Análisis de Señales Biológicas",
+        description: "Monitoreo y análisis de señales vitales y neurológicas",
+        subtext: "Detección temprana de anomalías",
+        longDescription: "El análisis de señales biológicas permite monitorear y comprender mejor las funciones vitales del cuerpo humano, facilitando la detección temprana de condiciones médicas y el seguimiento de tratamientos.",
+        features: [
+          "Análisis en tiempo real de ECG y EEG",
+          "Monitoreo cardíaco avanzado",
+          "Detección de patrones anormales en señales vitales",
+          "Procesamiento de señales neuronales",
+          "Análisis de variabilidad del ritmo cardíaco"
+        ],
+        applications: [
+          "Monitoreo de pacientes en UCI",
+          "Diagnóstico de arritmias cardíacas",
+          "Estudios del sueño",
+          "Evaluación neurológica",
+          "Rehabilitación asistida"
+        ],
+        technologies: [
+          "Sistemas de monitoreo multiparamétrico",
+          "Algoritmos de detección de anomalías",
+          "Dispositivos de telemetría médica",
+          "Software de análisis clínico"
+        ],
+        imagePath: "/path/to/biological-signals-image.jpg"
+      },
+      {
+        title: "Procesamiento Frecuencial en Ultrasonidos",
+        description: "Mejora de calidad y resolución en imágenes de ultrasonido",
+        subtext: "Visualizaciones más claras de tejidos internos",
+        longDescription: "Las técnicas avanzadas de procesamiento frecuencial permiten obtener imágenes de ultrasonido de mayor calidad y resolución, facilitando diagnósticos más precisos y procedimientos menos invasivos.",
+        features: [
+          "Mejora adaptativa de resolución",
+          "Reducción avanzada de ruido",
+          "Realce de estructuras anatómicas específicas",
+          "Reconstrucción 4D en tiempo real",
+          "Optimización de contraste tisular"
+        ],
+        applications: [
+          "Diagnóstico prenatal",
+          "Evaluación cardiovascular",
+          "Guía de procedimientos intervencionistas",
+          "Elastografía tisular",
+          "Ecografía músculo-esquelética"
+        ],
+        technologies: [
+          "Sistemas de ultrasonido digital",
+          "Procesadores de señal especializados",
+          "Software de reconstrucción 4D",
+          "Algoritmos de mejora de imagen"
+        ],
+        imagePath: "/path/to/ultrasound-image.jpg"
+      }
+    ]
+  },
+  tech: {
+    title: "Aplicaciones Tecnológicas",
+    items: [
+      {
+        title: "Compresión de Audio y Video",
+        description: "Optimización de archivos multimedia mediante análisis frecuencial",
+        subtext: "Reducción de tamaño manteniendo la calidad",
+        longDescription: "Las técnicas de compresión basadas en análisis frecuencial permiten reducir significativamente el tamaño de archivos multimedia mientras mantienen una alta calidad perceptual, fundamental para streaming y almacenamiento digital.",
+        features: [
+          "Compresión de audio con pérdidas mínimas",
+          "Optimización avanzada de archivos multimedia",
+          "Análisis espectral para compresión eficiente",
+          "Codificación perceptual de audio",
+          "Compresión adaptativa en tiempo real"
+        ],
+        applications: [
+          "Servicios de streaming de audio/video",
+          "Almacenamiento de medios digitales",
+          "Transmisión de contenido en tiempo real",
+          "Producción musical profesional",
+          "Sistemas de videoconferencia"
+        ],
+        technologies: [
+          "Códecs de audio/video avanzados",
+          "Algoritmos de compresión perceptual",
+          "Hardware de codificación especializado",
+          "Software de producción multimedia"
+        ],
+        imagePath: "/path/to/compression-image.jpg"
+      },
+      {
+        title: "Filtros Digitales en Procesamiento de Imágenes",
+        description: "Aplicación de convolución para mejorar imágenes",
+        subtext: "Mejora visual y corrección de defectos",
+        longDescription: "Los filtros digitales son fundamentales en el procesamiento moderno de imágenes, permitiendo mejorar la calidad visual, eliminar ruido y resaltar características específicas en fotografía, video y sistemas de visión artificial.",
+        features: [
+          "Suavizado adaptativo de imágenes",
+          "Eliminación inteligente de ruido",
+          "Realce selectivo de bordes",
+          "Corrección de distorsiones ópticas",
+          "Mejora de contraste local"
+        ],
+        applications: [
+          "Fotografía digital profesional",
+          "Sistemas de visión artificial",
+          "Procesamiento de video en tiempo real",
+          "Restauración de imágenes",
+          "Aplicaciones de realidad aumentada"
+        ],
+        technologies: [
+          "Procesadores de imagen dedicados",
+          "Software de edición profesional",
+          "Algoritmos de filtrado adaptativo",
+          "Sistemas de procesamiento en tiempo real"
+        ],
+        imagePath: "/path/to/digital-filters-image.jpg"
+      },
+      {
+        title: "Reconocimiento de Voz",
+        description: "Procesamiento de señales de voz para interfaces",
+        subtext: "Fundamental en asistentes virtuales",
+        longDescription: "El reconocimiento de voz utiliza técnicas avanzadas de procesamiento de señales para convertir el habla en texto y comandos, permitiendo la interacción natural con dispositivos y sistemas.",
+        features: [
+          "Conversión precisa de voz a texto",
+          "Análisis espectral en tiempo real",
+          "Filtrado adaptativo de ruido ambiente",
+          "Identificación de patrones de voz",
+          "Procesamiento de lenguaje natural"
+        ],
+        applications: [
+          "Asistentes virtuales inteligentes",
+          "Sistemas de dictado médico",
+          "Control por voz en automóviles",
+          "Transcripción automática",
+          "Sistemas de seguridad biométrica"
+        ],
+        technologies: [
+          "Motores de reconocimiento de voz",
+          "Procesadores de señal digital",
+          "Algoritmos de machine learning",
+          "Redes neuronales especializadas"
+        ],
+        imagePath: "/path/to/voice-recognition-image.jpg"
+      },
+      {
+        title: "Procesamiento de Señales 5G",
+        description: "Técnicas avanzadas para comunicaciones móviles de nueva generación",
+        subtext: "Optimización de redes de alta velocidad",
+        longDescription: "El procesamiento de señales en sistemas 5G implica técnicas sofisticadas para manejar grandes anchos de banda, múltiples usuarios y comunicaciones de baja latencia, fundamentales para la próxima generación de servicios móviles.",
+        features: [
+          "Procesamiento MIMO masivo",
+          "Beamforming adaptativo",
+          "Modulación y codificación avanzada",
+          "Optimización del espectro en tiempo real",
+          "Gestión de interferencias"
+        ],
+        applications: [
+          "Redes móviles de alta velocidad",
+          "Comunicaciones IoT masivas",
+          "Servicios de baja latencia",
+          "Redes privadas industriales",
+          "Sistemas de comunicación crítica"
+        ],
+        technologies: [
+          "Procesadores de señal 5G",
+          "Arrays de antenas inteligentes",
+          "Software de gestión de red",
+          "Sistemas de optimización espectral"
+        ],
+        imagePath: "/path/to/5g-signals-image.jpg"
+      }
+    ]
+  }
+};
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-indigo-50 p-6 relative">
