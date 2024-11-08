@@ -186,7 +186,7 @@ export default function FourierGuide() {
           "Sistemas de procesamiento digital",
           "Software de análisis de señales"
         ],
-        imagePath: "/path/to/fourier-transform-image.jpg"
+        imagePath: "/path/to/fourier-transform-image.webp"
       },
       {
         title: "Convolución",
@@ -213,7 +213,7 @@ export default function FourierGuide() {
           "Software de procesamiento de audio",
           "Sistemas embebidos de tiempo real"
         ],
-        imagePath: "/path/to/convolution-image.jpg"
+        imagePath: "/path/to/convolution-image.webp"
       },
       {
         title: "Procesamiento Frecuencial",
@@ -240,7 +240,7 @@ export default function FourierGuide() {
           "Hardware especializado de DSP",
           "Software de análisis espectral"
         ],
-        imagePath: "/path/to/frequency-processing-image.jpg"
+        imagePath: "/path/to/frequency-processing-image.png"
       }
     ]
   },
@@ -272,7 +272,7 @@ export default function FourierGuide() {
           "Algoritmos de aprendizaje profundo",
           "Sistemas PACS avanzados"
         ],
-        imagePath: "/path/to/medical-imaging-image.jpg"
+        imagePath: "/path/to/medical-imaging-image.webp"
       },
       {
         title: "Análisis de Señales Biológicas",
@@ -299,7 +299,7 @@ export default function FourierGuide() {
           "Dispositivos de telemetría médica",
           "Software de análisis clínico"
         ],
-        imagePath: "/path/to/biological-signals-image.jpg"
+        imagePath: "/path/to/biological-signals-image.webp"
       },
       {
         title: "Procesamiento Frecuencial en Ultrasonidos",
@@ -326,7 +326,7 @@ export default function FourierGuide() {
           "Software de reconstrucción 4D",
           "Algoritmos de mejora de imagen"
         ],
-        imagePath: "/path/to/ultrasound-image.jpg"
+        imagePath: "/path/to/ultrasound-image.png"
       }
     ]
   },
@@ -358,7 +358,7 @@ export default function FourierGuide() {
           "Hardware de codificación especializado",
           "Software de producción multimedia"
         ],
-        imagePath: "/path/to/compression-image.jpg"
+        imagePath: "/path/to/compression-image.png"
       },
       {
         title: "Filtros Digitales en Procesamiento de Imágenes",
@@ -385,7 +385,7 @@ export default function FourierGuide() {
           "Algoritmos de filtrado adaptativo",
           "Sistemas de procesamiento en tiempo real"
         ],
-        imagePath: "/path/to/digital-filters-image.jpg"
+        imagePath: "/path/to/digital-filters-image.png"
       },
       {
         title: "Reconocimiento de Voz",
